@@ -7,6 +7,9 @@ The backend server is already complete — your job is to write the TypeScript c
 
 ## Getting started
 
+**⚠️ Note** `npm run build` and `npm run dev` will fail as long as there are errors.
+Follow the Exercises until there are no errors left.
+
 ```bash
 # 1. Install dependencies
 npm install
@@ -27,8 +30,8 @@ npm start
 ## Project structure
 
 ```
-├── server.js              ← Backend (complete – don't touch)
-├── data/songs.json        ← Song data stored on disk
+├── server.js              ← Backend (complete – don't touch!)
+├── data/songs.json        ← Our Basic Data Source (don't touch!)
 ├── src/
 │   ├── interfaces.ts      ← Exercise 1: define the Song interface
 │   ├── app.ts             ← Exercises 2, 3, 5, 7: TypeScript logic
@@ -77,6 +80,8 @@ Create a TypeScript `interface` called `Song` with these properties:
 | `title`  | `string` | Yes       |
 | `artist` | `string` | Yes       |
 | `year`   | `number` | Yes       |
+
+Import the interface in `src/app.ts` (search for the 'Exercise 1' comment), now you can run `npm run dev`!
 
 ---
 

@@ -3,12 +3,11 @@
 //
 //  This file is partially complete. Look for EXERCISE comments
 //  and follow the instructions to build the app step by step.
-//
-//  Workshop concepts:
-//    • Interface / type annotation  (see interfaces.ts)
-//    • Async / await with fetch (GET, POST, PUT, DELETE)
-//    • DOM typing  (HTMLInputElement, HTMLUListElement, …)
 // ============================================================
+
+// =====================  EXERCISE 1  =================================
+//  Import the created interface
+// ====================================================================
 
 // ====================================================================
 // 1. API functions
@@ -107,8 +106,8 @@ function getElement<T extends HTMLElement>(id: string): T {
 let currentSongs: Song[] = [];
 
 async function loadSongs(): Promise<void> {
-  currentSongs = await getSongs();
-  renderSongs(currentSongs);
+  //currentSongs = await getSongs();
+  //renderSongs(currentSongs);
 }
 
 // ====================================================================
@@ -154,7 +153,7 @@ async function onAddSong(): Promise<void> {
     year: Number(getInput("year")),
   };
 
-  await addSong(newSong);
+  //await addSong(newSong);
   onCancelAdd();
   await loadSongs();
 }
@@ -167,7 +166,7 @@ async function onSaveEdit(): Promise<void> {
     year: Number(getInput("edit-year")),
   };
 
-  await updateSong(id, changes);
+  //await updateSong(id, changes);
   getElement("edit-form").style.display = "none";
   await loadSongs();
 }

@@ -4,11 +4,6 @@
 //
 //  This file is partially complete. Look for EXERCISE comments
 //  and follow the instructions to build the app step by step.
-//
-//  Workshop concepts:
-//    • Interface / type annotation  (see interfaces.ts)
-//    • Async / await with fetch (GET, POST, PUT, DELETE)
-//    • DOM typing  (HTMLInputElement, HTMLUListElement, …)
 // ============================================================
 // ====================================================================
 // 1. API functions
@@ -19,13 +14,6 @@
 //    - Use fetch() to GET "/songs"
 //    - Call response.json() to parse the body
 //    - The return type should be Promise<Song[]>
-//
-//  Example skeleton:
-//    async function getSongs(): Promise<Song[]> {
-//      const response = ...
-//      const songs: Song[] = ...
-//      return songs;
-//    }
 // ====================================================================
 // =====================  EXERCISE 5  =================================
 //  Implement addSong(song):
@@ -77,7 +65,7 @@ function getElement(id) {
 //    - Get the <ul> element with id "song-list"
 //      → use: getElement<HTMLUListElement>("song-list")
 //    - Clear its content: list.innerHTML = ""
-//    - Loop through each song with .forEach()
+//    - Loop through each song with a for loop
 //    - For each song, create an <li> element and set its innerHTML to:
 //
 //        <span>
@@ -95,8 +83,8 @@ function getElement(id) {
 // Keep a local copy so onEdit can look up a song by id without another fetch
 let currentSongs = [];
 async function loadSongs() {
-    currentSongs = await getSongs();
-    renderSongs(currentSongs);
+    //currentSongs = await getSongs();
+    //renderSongs(currentSongs);
 }
 // ====================================================================
 // 4. Click handlers  (provided – these call YOUR functions above)
@@ -134,7 +122,7 @@ async function onAddSong() {
         artist: getInput("artist"),
         year: Number(getInput("year")),
     };
-    await addSong(newSong);
+    //await addSong(newSong);
     onCancelAdd();
     await loadSongs();
 }
@@ -145,7 +133,7 @@ async function onSaveEdit() {
         artist: getInput("edit-artist"),
         year: Number(getInput("edit-year")),
     };
-    await updateSong(id, changes);
+    //await updateSong(id, changes);
     getElement("edit-form").style.display = "none";
     await loadSongs();
 }

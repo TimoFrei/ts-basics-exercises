@@ -81,8 +81,6 @@ Create a TypeScript `interface` called `Song` with these properties:
 | `artist` | `string` | Yes       |
 | `year`   | `number` | Yes       |
 
-Import the interface in `src/app.ts` (search for the 'Exercise 1' comment), now you can run `npm run dev`!
-
 ---
 
 ### Exercise 2 – Fetch songs from the server (GET)
@@ -97,8 +95,6 @@ Write an `async` function called `getSongs` that:
 4. Has the return type `Promise<Song[]>`
 
 > 📖 Study the `deleteSong()` function already in the file for reference!
-
-**✅ Test:** After this exercise + build, the song list should load on the page.
 
 ---
 
@@ -191,5 +187,4 @@ Make it look good! Some ideas:
 
 ## 🎉 Done!
 
-Once all exercises are complete, you have a fully working Music Viewer app.  
-Compare your solution with the `workshop-ts-basics` folder to see the reference implementation.
+Once all exercises are complete, you have a fully working Music Viewer app.

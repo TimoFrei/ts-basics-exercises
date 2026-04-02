@@ -5,10 +5,6 @@
 //  and follow the instructions to build the app step by step.
 // ============================================================
 
-// =====================  EXERCISE 1  =================================
-//  Import the created interface
-// ====================================================================
-
 // ====================================================================
 // 1. API functions
 // ====================================================================
@@ -19,13 +15,6 @@
 //    - Use fetch() to GET "/songs"
 //    - Call response.json() to parse the body
 //    - The return type should be Promise<Song[]>
-//
-//  Example skeleton:
-//    async function getSongs(): Promise<Song[]> {
-//      const response = ...
-//      const songs: Song[] = ...
-//      return songs;
-//    }
 // ====================================================================
 
 // =====================  EXERCISE 5  =================================
@@ -86,7 +75,7 @@ function getElement<T extends HTMLElement>(id: string): T {
 //    - Get the <ul> element with id "song-list"
 //      → use: getElement<HTMLUListElement>("song-list")
 //    - Clear its content: list.innerHTML = ""
-//    - Loop through each song with .forEach()
+//    - Loop through each song with a for loop
 //    - For each song, create an <li> element and set its innerHTML to:
 //
 //        <span>

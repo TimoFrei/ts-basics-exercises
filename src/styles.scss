@@ -1,0 +1,59 @@
+// ============================================================
+//  styles.scss  –  Application styles
+// ============================================================
+
+// ---- reset & base (provided) ----
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f4f4f8;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+// =====================  EXERCISE 8  =================================
+//  Style the application! Below are suggestions – feel free to
+//  experiment and make it your own.
+//
+//  8a) Style <main>:
+//      - white background, rounded corners, subtle box-shadow
+//      - padding and a max-width (e.g. 600px)
+//
+//  8b) Style headings (h1, h2) and the subtitle paragraph (.subtitle)
+//
+//  8c) Style the song list (#song-list):
+//      - Remove default list bullets (list-style: none)
+//      - Each <li> should be a flex row with items centered
+//      - Add a bottom border between items
+//
+//  8d) Style buttons:
+//      - Base style: padding, border-radius, cursor pointer
+//      - .btn-edit: blue tones
+//      - .btn-delete: red tones
+//
+//  8e) Style input fields:
+//      - Padding, border, border-radius
+//      - A focus outline color
+//
+//  8f) Style #add-form and #edit-form:
+//      - Both hidden by default (display: none)
+//      - Use flex-direction: column and gap for spacing
+//      - Give each a distinct background color and border
+//
+//  Hint: SCSS lets you nest selectors!
+//    #song-list {
+//      li {
+//        // styles for li inside #song-list
+//      }
+//    }
+// ====================================================================

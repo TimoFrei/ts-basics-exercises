@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Viewer – TS Workshop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <h1>🎵 Favorite Songs</h1>
+    <p class="subtitle">TypeScript Basics Workshop</p>
+
+    <!-- Song list (populated by app.ts → renderSongs) -->
+    <h2>Song List</h2>
+    <ul id="song-list"></ul>
+
+    <hr />
+
+    <!-- ==================  EXERCISE 4  ==========================
+      Add an "Add Song" form below this comment.
+
+      Requirements:
+        1. A button with id="btn-show-add" that calls onShowAddForm()
+           to toggle the form open. Text: "+ Add Song"
+
+        2. A <div> with id="add-form" containing:
+           - An <h2> with text "Add Song"
+           - An <input> with id="title"   type="text"   placeholder="Title"
+           - An <input> with id="artist"  type="text"   placeholder="Artist"
+           - An <input> with id="year"    type="number"  placeholder="Year"
+           - A button that calls onAddSong()   → "Add Song"
+           - A button that calls onCancelAdd() → "Cancel"
+
+      Hint: Wrap the two buttons in a <div class="form-row">
+      Hint: Use onclick="functionName()" on the buttons
+    ============================================================ -->
+
+
+
+    <!-- ==================  EXERCISE 6  ==========================
+      Add an "Edit Song" form below this comment.
+
+      Requirements:
+        A <div> with id="edit-form" containing:
+          - An <h2> with text "Edit Song"
+          - A hidden input:  <input id="edit-id" type="hidden" />
+          - An <input> with id="edit-title"   type="text"   placeholder="Title"
+          - An <input> with id="edit-artist"  type="text"   placeholder="Artist"
+          - An <input> with id="edit-year"    type="number"  placeholder="Year"
+          - A button that calls onSaveEdit()   → "Save Changes"
+          - A button that calls onCancelEdit() → "Cancel"
+
+      Hint: Wrap the two buttons in a <div class="form-row">
+    ============================================================ -->
+
+
+  </main>
+
+  <!-- Compiled TypeScript (run: npm run build) -->
+  <script src="app.js"></script>
+</body>
+</html>
